@@ -71,12 +71,13 @@ image = "images/logo.png"
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
-[site_verification]
-google = ""   # Your verification code
-bing = ""     # Your verification code
-baidu = ""    # Your verification code
-facebook = "" # Your verification code
-mastodon = "" # Your verification code
+# Uncomment and add verification codes when ready:
+# [site_verification]
+# google = ""
+# bing = ""
+# baidu = ""
+# facebook = ""
+# mastodon = ""
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
