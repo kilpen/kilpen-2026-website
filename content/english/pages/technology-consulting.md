@@ -2,64 +2,77 @@
 title: "Technology Consulting"
 meta_title: "Technology Consulting | KilPen Technical Services"
 description: "Strategic IT consulting for mission-driven organizations. Trusted guidance on technology decisions, vendor evaluations, and digital transformation."
-# save as draft
 draft: false
 ---
 
-Making informed technology decisions is essential for any business aiming to stay efficient, secure, and competitive. At KilPen Tech, our **Technology Consulting** services are designed to help organizations navigate complex IT challenges and make confident, strategic decisions.
+Technology decisions shape your organization for years to come. KilPen provides **strategic consulting** that helps mission-driven organizations navigate complex IT challenges with clarity and confidence.
 
-Whether you're exploring a new system, rethinking your digital infrastructure, or planning for growth, our consultants bring clarity, insight, and trusted expertise to the table.
+{{< notice "note" >}}
+**Objective. Confidential. Mission-focused.** As an independent consultant, we provide unbiased guidance—not vendor-driven recommendations. Your sensitive discussions stay protected.
+{{< /notice >}}
 
----
-### Why Technology Consulting Matters
+## Is This Right for You?
 
-Before major business changes—such as expanding operations, migrating to the cloud, adopting new platforms, or integrating remote work—it's critical to seek experienced guidance. Technology choices made today can shape operational success for years to come.
+Technology consulting is valuable when you're facing:
 
-Engaging a consultant early in the process:
+- **Major decisions** — New systems, cloud migrations, or platform changes
+- **Growth transitions** — Scaling operations or adding locations
+- **Budget constraints** — Need expert input without a full-time hire
+- **Vendor evaluations** — Comparing proposals and need objective analysis
+- **Internal challenges** — Sensitive IT matters requiring outside perspective
+- **Strategic planning** — Aligning technology investments with organizational goals
 
-- Helps **identify risks and avoid costly missteps**
-- Brings **objectivity** to internal discussions
-- Aligns **technology decisions with business goals**
-- Ensures plans consider **scalability, compliance, and security**
+## What We Provide
 
----
-### A Relationship You Can Rely On
+### Strategic Advisory
 
-At KilPen Tech, we believe in building long-term partnerships—not just delivering one-off advice. When you work with us, you gain a dependable technology ally who understands your business context and can offer strategic input when it matters most.
+We help you think through technology decisions before committing resources:
 
-Our clients value us for:
+- **IT Assessments** — Evaluate your current infrastructure, identify gaps and opportunities
+- **Strategic Planning** — Align IT investments with your mission, budget, and timeline
+- **Vendor Evaluation** — Compare software and service options with an expert eye
+- **Technology Roadmapping** — Plan phased upgrades or digital transformation initiatives
+- **Policy Development** — Create or refine acceptable use policies, security protocols, and governance
 
-- **Timely, practical recommendations**
-- A **confidential and trusted sounding board**
-- **Clear communication** across technical and non-technical teams
-- A focus on **what’s right for your mission**, not just what’s trending
+### Fractional CIO Services
 
----
-### Objective, Confidential, and Strategic
+Not every organization needs a full-time technology executive—but every organization deserves executive-level thinking about technology.
 
-As an independent consultant, KilPen Tech provides **unbiased, third-party insight**—especially valuable when evaluating vendor proposals, handling internal IT concerns, or navigating change. We are committed to your privacy and maintain strict confidentiality on sensitive topics such as staffing, budgeting, cybersecurity, or internal performance assessments.
+Our Fractional CIO service provides:
 
----
-### Types of Consulting Engagements
+- **Strategic leadership** on technology direction and investment priorities
+- **Board and leadership briefings** on IT matters
+- **Vendor relationship management** and contract negotiations
+- **IT team mentorship** and organizational guidance
+- **Crisis support** when critical technology issues arise
 
-We offer both short-term and long-term consulting services tailored to your needs, including:
+This service is ideal for nonprofits and growing organizations that need senior technology leadership on a part-time or advisory basis.
 
-- **IT Assessments and Audits**  
-  Understand the current state of your technology and identify opportunities for improvement.
+## Why Organizations Choose KilPen
 
-- **Strategic Planning**  
-  Align your IT investments with your business goals, budget, and timeline.
+#### 1. Objectivity
+We're not selling you software or pushing vendor partnerships. Our only agenda is what's right for your organization.
 
-- **Vendor and Tool Evaluation**  
-  Compare software and service options with an expert eye for functionality, cost, and integration.
+#### 2. Confidentiality
+Sensitive topics—staffing concerns, budget realities, security incidents—stay strictly confidential.
 
-- **Technology Roadmapping**  
-  Plan phased upgrades or digital transformation strategies with confidence.
+#### 3. Mission Alignment
+We understand nonprofits and social enterprises. Recommendations consider your mission impact, not just technical specs.
 
-- **Policy and Governance Advising**
-  Create or refine acceptable use policies, security protocols, or compliance strategies.
+#### 4. Practical Guidance
+No jargon-heavy reports that gather dust. We deliver clear, actionable recommendations you can actually implement.
 
----
-**Want to learn more or schedule a consulting call?**
+#### 5. Long-Term Partnership
+We build relationships, not transactions. Many clients return to us as trusted advisors year after year.
 
-{{< button label="Contact Us" link="/contact" style="solid" >}}
+## How We Work Together
+
+Consulting engagements are tailored to your needs:
+
+- **Project-Based** — Defined scope for assessments, evaluations, or planning initiatives
+- **Advisory Retainer** — Ongoing access for strategic guidance and ad-hoc questions
+- **Fractional CIO** — Regular, scheduled involvement in your technology leadership
+
+Every engagement begins with a discovery conversation to understand your situation, challenges, and goals—no obligation, no pressure.
+
+{{< button label="Schedule a Strategy Conversation" link="/contact" style="solid" >}}
