@@ -1,20 +1,26 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  {{ with .Content }}
   <section class="section pt-0">
     <div class="container">
-      <div class="content">
-        {{ . }}
+      <div class="content mb-8">
+        <p>Our team combines dedicated core members with trusted partners to deliver exceptional technology solutions.</p>
       </div>
-    </div>
-  </section>
-  {{ end }}
 
-  <section class="section pt-0">
-    <div class="container">
+      <h2 class="mb-8">Core Team</h2>
+      <p class="mb-8">Our dedicated core team brings decades of combined experience in IT services, project management, and technical consulting.</p>
+      <div class="row mb-14">
+        {{ range where .RegularPages "Params.group" "core" }}
+          <div class="md:col-6 lg:col-4 mb-14">
+            {{ partial "components/author-card" . }}
+          </div>
+        {{ end }}
+      </div>
+
+      <h2 class="mb-8">Partners</h2>
+      <p class="mb-8">We collaborate with trusted partners who share our commitment to delivering exceptional technology solutions.</p>
       <div class="row">
-        {{ range .RegularPages }}
+        {{ range where .RegularPages "Params.group" "partner" }}
           <div class="md:col-6 lg:col-4 mb-14">
             {{ partial "components/author-card" . }}
           </div>
