@@ -1,68 +1,68 @@
 ---
 title: "Bespoke Services"
-# meta title
-meta_title: ""
-# meta description
-description: "This is meta description"
-# save as draft
+meta_title: "Bespoke IT Services | KilPen Technical Services"
+description: "Custom technology solutions for sensitive, complex, or unique challenges. Confidential IT support, business process automation, and risk audits tailored to your organization."
 draft: false
 ---
 
-Not every technology need fits neatly into a predefined category—and that’s exactly where KilPen Tech’s **Bespoke Services** come in.
+When your challenge doesn't fit a standard category, you need a partner who listens first and builds solutions second. KilPen's **Bespoke Services** deliver custom technology solutions for organizations facing unique, complex, or sensitive situations.
 
-These tailored engagements are designed to address unique, complex, or sensitive projects that fall outside the scope of typical IT support or consulting. Whether you're facing a discreet internal matter or need help automating a critical business process, KilPen Tech provides the expertise and discretion you can trust.
+{{< notice "note" >}}
+**Confidentiality is foundational.** Every bespoke engagement is handled with the highest standards of discretion and integrity.
+{{< /notice >}}
 
-### When Off-the-Shelf Doesn’t Fit
+## Is This Right for You?
 
-Our Bespoke Services are ideal for:
+Bespoke Services are ideal when you need:
 
-- **High-sensitivity situations** requiring discretion and confidentiality
-- **Process-driven challenges** that need custom automation solutions
-- **One-time assessments or audits** with strategic value
+- **Discretion** — High-sensitivity situations requiring absolute confidentiality
+- **Custom solutions** — Challenges that don't fit predefined IT service packages
+- **One-time expertise** — Assessments, audits, or projects with strategic value
+- **Specialized automation** — Process improvements tailored to your workflows
 
-At the core of every bespoke engagement is a commitment to thoughtful problem-solving, clear communication, and results that align with your organization’s values and objectives.
+## Confidential Technology Services
 
----
-### Confidential & Discreet Technology Services
+Some situations demand more than technical expertise—they require trust. We support organizations navigating sensitive matters with professionalism and care.
 
-Some business challenges demand absolute confidentiality. We support clients in navigating sensitive IT matters with professionalism and care, including:
+**Common scenarios include:**
 
-- Privacy-sensitive computing environments
-- Cybersecurity investigations or incidents
-- Executive or “key person” turnover
-- High-volume personnel transitions
+- Executive or key-person transitions
 - Internal investigations and access reviews
+- Cybersecurity incidents requiring discreet response
+- High-volume personnel changes
+- Privacy-sensitive computing environments
 
-KilPen Tech maintains the highest standards of **confidentiality, discretion, and integrity**, giving you peace of mind during critical transitions or investigations.
+We maintain strict confidentiality throughout every engagement, giving you peace of mind during critical moments.
 
----
-### Business Process Automation
+## Business Process Automation
 
-Manual workflows can waste time and introduce unnecessary errors. KilPen Tech helps organizations **map, refine, and automate business processes**, improving consistency, speed, and scalability.
+Manual workflows drain time and introduce errors. We help organizations **map, refine, and automate** their processes for improved consistency and efficiency.
 
-We collaborate closely with clients to:
+**Our approach:**
 
-- Analyze current workflows and pain points
-- Design efficient, streamlined processes
-- Build custom automations using trusted tools and platforms
-- Train staff on new systems and monitor performance
+1. **Analyze** — Document current workflows and identify pain points
+2. **Design** — Create streamlined, efficient process improvements
+3. **Build** — Develop custom automations using proven tools and platforms
+4. **Support** — Train your team and monitor performance
 
-From automating onboarding procedures to simplifying reporting, we bring clarity and structure to complex processes.
+From onboarding procedures to reporting pipelines, we bring clarity and structure to complex operations.
 
----
-### IT & Risk Audits
+## IT & Risk Audits
 
-Understanding your technology landscape is essential for maintaining compliance, reducing risk, and planning future improvements. Our team provides:
+Understanding your technology landscape is essential for compliance, risk reduction, and strategic planning.
 
-- **Independent IT audits** to evaluate infrastructure, security, and practices
-- **Assistance with third-party risk audits**, helping organizations respond to vendor or compliance reviews
-- Clear reporting, remediation recommendations, and documentation support
+**We provide:**
 
-Whether you're responding to an external request or proactively reviewing your own systems, we help you get the full picture and take meaningful next steps.
+- **Independent IT audits** — Evaluate infrastructure, security practices, and operational readiness
+- **Third-party risk audit support** — Help your organization respond to vendor or compliance reviews
+- **Clear documentation** — Actionable reports with prioritized remediation recommendations
 
----
-KilPen Tech’s Bespoke Services are built on adaptability, discretion, and deep technical knowledge. When your needs fall outside the usual categories, we’re ready to step in with custom solutions and reliable support.
+Whether you're responding to an external request or proactively reviewing your systems, we help you understand the full picture.
 
-**Have a unique challenge? Contact us for a confidential consultation.**
+## How Engagements Work
 
-{{< button label="Contact Us" link="/contact" style="solid" >}}
+Bespoke projects are scoped individually based on your needs. We typically work on a **project basis** with clearly defined deliverables, timelines, and pricing agreed upfront. For ongoing needs, **retainer arrangements** are also available.
+
+Every engagement begins with a confidential discovery conversation—no obligation, no pressure.
+
+{{< button label="Schedule a Confidential Consultation" link="/contact" style="solid" >}}

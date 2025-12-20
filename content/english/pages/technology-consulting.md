@@ -1,9 +1,7 @@
 ---
 title: "Technology Consulting"
-# meta title
-meta_title: ""
-# meta description
-description: "This is meta description"
+meta_title: "Technology Consulting | KilPen Technical Services"
+description: "Strategic IT consulting for mission-driven organizations. Trusted guidance on technology decisions, vendor evaluations, and digital transformation."
 # save as draft
 draft: false
 ---
@@ -58,8 +56,8 @@ We offer both short-term and long-term consulting services tailored to your need
 - **Technology Roadmapping**  
   Plan phased upgrades or digital transformation strategies with confidence.
 
-- **Policy and Governance Advising**  
-  Create or refine acceptable use policies, security protocols, or compliance str
+- **Policy and Governance Advising**
+  Create or refine acceptable use policies, security protocols, or compliance strategies.
 
 ---
 **Want to learn more or schedule a consulting call?**
