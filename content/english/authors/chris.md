@@ -2,7 +2,9 @@
 title: Christopher
 email: christopher@kilpen.com
 image: "/images/chris.png"
-description: this is meta description
+description: Principal Consultant at KilPen Technical Services
+group: core
+weight: 1
 social:
   - name: github
     icon: fa-brands fa-github

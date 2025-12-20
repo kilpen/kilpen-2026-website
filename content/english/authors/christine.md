@@ -2,7 +2,9 @@
 title: Christine
 email: christine@kilpen.com
 image: "/images/avatar.png"
-description: this is meta description
+description: IT Business Analyst and Partner
+group: partner
+weight: 10
 social:
   - name: github
     icon: fa-brands fa-github
