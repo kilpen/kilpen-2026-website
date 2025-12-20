@@ -1,29 +1,29 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "What Our Clients Say"
+description: "We respect our clients' privacy, but here's what organizations like yours have shared about working with KilPen."
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Executive Director"
+    designation: "Hawaii-based Nonprofit"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "KilPen understood our budget constraints and delivered a solution that actually fit our needs—not an overbuilt system we couldn't maintain. Their team took time to understand our mission before recommending anything."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Operations Manager"
+    designation: "Social Enterprise"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "When we needed help with a sensitive personnel matter involving IT access, KilPen handled everything with complete discretion. They were professional, thorough, and we never had to worry about confidentiality."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Board Chair"
+    designation: "Community Foundation"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "We've worked with larger IT firms before, but KilPen's bespoke approach made all the difference. They built exactly what we needed—nothing more, nothing less—and stood behind their work."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Program Director"
+    designation: "Environmental Nonprofit"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "As a nonprofit, every dollar matters. KilPen helped us automate processes that were eating up staff time, freeing our team to focus on mission-critical work. The ROI was immediate."
 
 # don't create a separate page
 build:
