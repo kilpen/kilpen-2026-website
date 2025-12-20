@@ -1,65 +1,72 @@
 ---
-title: "Managed IT Services"
-# meta title
-meta_title: "KilPen IT Services"
-# meta description
-description: "KilPen Tech manages your IT Services so you don't have to."
-# save as draft
+title: "IT Services"
+meta_title: "IT Services | KilPen Technical Services"
+description: "Reliable IT support for nonprofits and mission-driven organizations. Proactive monitoring, helpdesk support, and infrastructure services with predictable pricing."
 draft: false
 ---
 
-At KilPen Tech, we provide comprehensive **Managed IT Services** to help businesses focus on their core mission while we take care of their technology needs. As a Managed Service Provider (MSP), we partner with organizations to oversee, maintain, and support their IT infrastructure and users—proactively and reliably.
+Your organization has a mission to fulfill—technology should support that mission, not distract from it. KilPen provides **dedicated IT services** that keep your systems running smoothly while you focus on what matters most.
 
----
-### What Are Managed IT Services?
+{{< notice "note" >}}
+**Built for mission-driven organizations.** We specialize in supporting nonprofits, social enterprises, and purpose-driven businesses with IT services designed for your unique needs and budget realities.
+{{< /notice >}}
 
-Managed IT Services involve outsourcing the responsibility for your company’s IT systems to a trusted provider. Instead of reacting to technical problems as they arise, we work behind the scenes to ensure your systems run smoothly, securely, and efficiently at all times.
+## Is This Right for You?
 
-This includes:
+Our IT services are ideal for organizations that:
 
-- Monitoring and managing networks and servers
-- Providing end-user support and helpdesk services
-- Performing regular system maintenance and updates
-- Managing cloud services and software platforms
-- Supporting cybersecurity and compliance needs
-- Planning for business continuity and disaster recovery
+- **Don't have in-house IT staff** and need reliable, ongoing support
+- **Want predictable technology costs** instead of surprise expenses
+- **Operate with remote or hybrid teams** requiring secure access
+- **Need to maximize mission impact**, not IT overhead
+- **Are growing** and need technology that scales with them
 
----
-### Why Companies Choose Managed Services
+## What We Provide
 
-Technology is critical to operations, but managing it can be time-consuming and complex. With KilPen Tech as your IT partner, your team gains peace of mind knowing that certified professionals are handling your systems with care and attention.
+When you partner with KilPen for IT services, we become your dedicated technology team. Our support includes:
 
-Managed services are especially helpful for:
+**Infrastructure & Systems**
+- Network and server monitoring and maintenance
+- Cloud services administration
+- System updates, patches, and security hardening
+- Backup management and disaster recovery planning
 
-- **Small to mid-sized businesses** without in-house IT staff
-- **Remote and hybrid teams** needing secure, seamless access
-- **Nonprofits and mission-driven organizations** aiming to maximize impact, not overhead
-- **Growing companies** looking to scale without tech bottlenecks
+**User Support**
+- Helpdesk services for your staff
+- Onboarding and offboarding support
+- Software and application assistance
+- Hardware troubleshooting and procurement guidance
 
----
-### Benefits of Working With a Managed Service Provider
+**Security & Compliance**
+- Cybersecurity monitoring and incident response
+- Policy development and user training
+- Compliance support for nonprofit and industry requirements
 
-Choosing KilPen Tech as your MSP gives you:
+## Why Organizations Choose KilPen
 
-#### 1. Predictable IT Costs
-Avoid surprise expenses with flat-rate pricing and transparent service agreements.
+#### 1. Predictable Costs
+Flat-rate pricing means no surprise bills. You know exactly what IT costs each month, making budgeting straightforward.
 
 #### 2. Reduced Downtime
-We proactively monitor systems to detect and address issues before they disrupt operations.
+We monitor your systems proactively, catching and resolving issues before they disrupt your work.
 
-#### 3. Expert Support
-Our team brings years of experience supporting diverse technologies and industries.
+#### 3. Mission-Aligned Support
+We understand nonprofits and social enterprises. Our recommendations prioritize your mission, not upselling.
 
-#### 4. Improved Security
-We help safeguard your systems against threats through layered security, regular updates, and user training.
+#### 4. Responsive Expertise
+When something breaks, you get a real person who knows your systems—not a ticket queue.
 
-#### 5. More Time to Focus
-Let your team focus on what they do best—we'll handle the tech behind the scenes.
+#### 5. Peace of Mind
+Focus on your work knowing that qualified professionals are keeping your technology secure and running.
 
----
-KilPen Tech’s approach is grounded in reliability, responsiveness, and respect for your mission. Whether you’re local or international, our goal is the same: to provide accessible, high-quality IT support that helps your organization thrive.
+## How We Work Together
 
----
-**Want to learn more or request a customized plan?**
+We offer flexible service arrangements to match your organization's needs:
 
-{{< button label="Contact Us" link="/contact" style="solid" >}}
+- **Ongoing Support** — Monthly retainer for continuous monitoring, maintenance, and helpdesk access
+- **Project-Based** — Defined engagements for migrations, upgrades, or infrastructure buildouts
+- **Hybrid** — Combine ongoing support with project work as needs arise
+
+Every engagement starts with a discovery conversation to understand your current environment, pain points, and goals.
+
+{{< button label="Let's Talk About Your IT Needs" link="/contact" style="solid" >}}
