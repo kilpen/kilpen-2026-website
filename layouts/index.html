@@ -44,7 +44,7 @@
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
+    <section class="section-sm border-t border-border dark:border-darkmode-border {{ if (modBool $i 2) }}bg-light dark:bg-darkmode-body{{ else }}bg-body dark:bg-darkmode-body{{ end }}">
       <div class="container">
         <div class="row items-center justify-between">
           <div
@@ -89,17 +89,17 @@
   <!-- Call to Action -->
   {{ with site.GetPage "sections/call-to-action" }}
     {{ if .Params.enable }}
-      <section class="section bg-gradient">
+      <section class="section bg-dark dark:bg-darkmode-dark">
         <div class="container">
           <div class="row items-center justify-between">
             <div class="md:col-5 mb-6 md:mb-0">
               {{ partial "image" (dict "Src" .Params.image "Alt" "call to action" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
             </div>
             <div class="md:col-6">
-              <h2 class="mb-4">
+              <h2 class="mb-4 text-white">
                 {{ .Params.title | markdownify }}
               </h2>
-              <p class="mb-8 text-lg">
+              <p class="mb-8 text-lg text-gray-300">
                 {{ .Params.description | markdownify }}
               </p>
               {{ with .Params.button }}
@@ -121,7 +121,7 @@
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
-      <section class="section">
+      <section class="section bg-primary/5 dark:bg-darkmode-primary/10 border-t border-border dark:border-darkmode-border">
         <div class="container">
           <div class="row">
             <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
@@ -138,8 +138,8 @@
                   {{ range .Params.testimonials }}
                     <div class="swiper-slide">
                       <div
-                        class="bg-light dark:bg-darkmode-light rounded-lg px-7 py-10">
-                        <div class="text-text-dark dark:text-white">
+                        class="bg-white dark:bg-darkmode-light rounded-lg px-7 py-10 shadow-sm">
+                        <div class="text-primary dark:text-darkmode-primary">
                           <svg
                             width="33"
                             height="20"
