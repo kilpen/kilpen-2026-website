@@ -111,7 +111,7 @@ Test that it worked.
 op user get --me
 ```
 
-## The Automation
+## The Automation ##
 Generally, the next part will do the following:
 1) Create a 1Password Vault and share it with the user.
 2) Create a 1Password item for the PGP Passphrase.
@@ -119,7 +119,6 @@ Generally, the next part will do the following:
 4) Create new PGP Sub-Keys for encryption and signing
 5) Export the public key and upload it to the user's vault and a company-wide key ring.
 6) Export the private key and upload it to the user's vault.
-
 ![Swimlane process diagram](/images/solutions/key-issuance-process.jpg)
 
 ## Creating the script ##
