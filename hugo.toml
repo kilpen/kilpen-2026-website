@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
-ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
+ID = '' # Google Analytics disabled - add your measurement ID here when ready
 
 [services.disqus]
 shortname = '' # Disqus comments disabled
