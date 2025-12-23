@@ -3,7 +3,7 @@ title: "Project and Vendor Management Tracking"
 meta_title: "Project and Vendor Management System"
 description: "Comprehensive project and vendor management system using Google Workspace and PMI framework"
 date: 2023-06-01T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/solutions/project-vendor-management-tracking.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["project-management", "vendor-management", "google-workspace"]

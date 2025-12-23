@@ -3,7 +3,7 @@ title: "Motor Pool Vehicle Maintenance System"
 meta_title: "Fleet Management System"
 description: "Centralized system for vehicle maintenance tracking and license renewal notifications"
 date: 2023-06-01T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/solutions/image-placeholder.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["fleet-management", "google-workspace", "automation"]

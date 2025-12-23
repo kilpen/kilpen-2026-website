@@ -3,7 +3,7 @@ title: "Google Sheets Data Aggregation"
 meta_title: "Google Sheets Data Aggregation Solution"
 description: "Dynamically identify and extract key data elements across 150+ Google Sheets"
 date: 2023-06-01T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/solutions/google-sheets-data-aggregation.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["google-sheets", "automation", "data-aggregation"]
