@@ -39,6 +39,7 @@ Once your complete, don't forget to adjust the settings to allow submissions fro
 
 ## Edit your form's scripting
 In the upper right hand of your form, click the vertical elipsis and select *Script Editor*.
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc3.png)
 
 Now that you're in the script editor, we'll need to copy/paste the Google Apps Script (GAS) code into the editor.
@@ -374,9 +375,11 @@ In the script editor, navigate to the *code.gs* file and locate the *Variables* 
 Let's work backwards for a second and review the final email that will be sent.  Then the variables might make more sense.
 
 Here is what the final email will look like:
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc6.png)
 
 And here are the variables:
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc7.png)
 
 The variables are broken into two sections:
@@ -396,6 +399,7 @@ The variables are broken into two sections:
 
 ### Set a form trigger
 On the left hand side of the script editor, select the *Triggers* option.  It's the alarm clock looking logo.
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc8.png)
 
 Now click the blue *+Add Trigger* button in the lower right.
@@ -411,19 +415,26 @@ Now click the Save button.
 You'll be prompted to authorize your script to run.  
 
 1.  Select your Google Account which will be running this script.
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc9.png)
+
 2. Click "Allow"
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc10.png)
 
 ### Give it a test!
 That was it.  Let's test a form submission and wait for the email.
 1.  Open the tab which had the Customer Feedback form.  It's probably to the left of script editor tab.
 2.  Select the *eyeball* icon which is the form preview.
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc11.png)
+
 3.  The *LIVE* version of your form will open in another tab.  This is the URL that we want to share with our customers.  Let's enter some test data and click submit.
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc12.png)
 
 If you were successful, the email address specified in the *Variables* should have received an email that looks like this:
+
 ![Google Form Screencap](/images/solutions/google-form-response-emailer-sc13.png)
 
 ## Need more help? ##

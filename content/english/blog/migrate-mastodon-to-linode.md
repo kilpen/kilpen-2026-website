@@ -167,7 +167,7 @@ Exit and log back in to confirm.
 ## Create object storage at Linode ##
 1.  Go here: https://cloud.linode.com/object-storage/buckets
 2.  Click ***Create Bucket## Sample .env.production file ##
-```
+```bash
 LOCAL_DOMAIN=kilpen.net
 SINGLE_USER_MODE=false
 SECRET_KEY_BASE=[Shh...]
