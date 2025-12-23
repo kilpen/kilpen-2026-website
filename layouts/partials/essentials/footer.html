@@ -2,11 +2,16 @@
   <div class="container">
     <div class="row items-center py-10">
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
+        <!-- navbar brand/logo - using darkmode logo for dark footer -->
         <a
-          class="navbar-brand inline-block"
+          class="navbar-brand inline-block footer-logo"
           href="{{ site.Home.RelPermalink }}">
-          {{ partial "logo" }}
+          {{ $logo := resources.Get "images/logo-darkmode.png" }}
+          {{ if $logo }}
+            <img src="{{ $logo.RelPermalink }}" alt="{{ site.Params.logo_text | default site.Title }}" width="{{ site.Params.logo_width | default "160px" }}" height="{{ site.Params.logo_height | default "32px" }}" />
+          {{ else }}
+            {{ partial "logo" }}
+          {{ end }}
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">

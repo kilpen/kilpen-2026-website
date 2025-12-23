@@ -1,15 +1,47 @@
 /* Add your own custom styles here */
 
 /* ==========================================================================
-   Page Header - Dark Charcoal with Subtle Grid Pattern
+   Page Header - Dark Charcoal with Circuit Board Pattern
    ========================================================================== */
 
 .page-header-charcoal {
   background-color: #1F2937;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 24px 24px;
+    /* Main grid base */
+    linear-gradient(rgba(139, 26, 26, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 26, 26, 0.08) 1px, transparent 1px),
+    /* Thicker horizontal trace lines */
+    linear-gradient(0deg, transparent 0px, transparent 20px, rgba(139, 26, 26, 0.25) 20px, rgba(139, 26, 26, 0.25) 22px, transparent 22px),
+    linear-gradient(0deg, transparent 0px, transparent 60px, rgba(139, 26, 26, 0.2) 60px, rgba(139, 26, 26, 0.2) 62px, transparent 62px),
+    /* Thicker vertical trace lines */
+    linear-gradient(90deg, transparent 0px, transparent 30px, rgba(139, 26, 26, 0.22) 30px, rgba(139, 26, 26, 0.22) 32px, transparent 32px),
+    linear-gradient(90deg, transparent 0px, transparent 70px, rgba(139, 26, 26, 0.18) 70px, rgba(139, 26, 26, 0.18) 72px, transparent 72px),
+    /* Corner traces - L shapes */
+    linear-gradient(90deg, transparent 30px, rgba(139, 26, 26, 0.25) 30px, rgba(139, 26, 26, 0.25) 32px, transparent 32px),
+    /* Solder pads / connection points */
+    radial-gradient(circle at 30px 20px, rgba(139, 26, 26, 0.4) 4px, rgba(139, 26, 26, 0.2) 5px, transparent 6px),
+    radial-gradient(circle at 70px 60px, rgba(139, 26, 26, 0.35) 4px, rgba(139, 26, 26, 0.15) 5px, transparent 6px),
+    radial-gradient(circle at 30px 60px, rgba(139, 26, 26, 0.3) 3px, rgba(139, 26, 26, 0.15) 4px, transparent 5px),
+    radial-gradient(circle at 70px 20px, rgba(139, 26, 26, 0.3) 3px, rgba(139, 26, 26, 0.15) 4px, transparent 5px),
+    /* Via holes */
+    radial-gradient(circle at 50px 40px, rgba(31, 41, 55, 1) 2px, rgba(139, 26, 26, 0.5) 3px, rgba(139, 26, 26, 0.2) 4px, transparent 5px),
+    radial-gradient(circle at 10px 10px, rgba(31, 41, 55, 1) 1.5px, rgba(139, 26, 26, 0.4) 2.5px, transparent 3.5px),
+    radial-gradient(circle at 90px 70px, rgba(31, 41, 55, 1) 1.5px, rgba(139, 26, 26, 0.4) 2.5px, transparent 3.5px);
+  background-size:
+    40px 40px,
+    40px 40px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px,
+    100px 80px;
   position: relative;
 }
 
@@ -56,8 +88,8 @@
   background-color: #374151; /* Darker grey - Tailwind gray-700 */
 }
 
-.footer-dark .navbar-brand img {
-  filter: brightness(0) invert(1); /* Make logo white for dark background */
+.footer-logo img {
+  filter: none; /* Use the darkmode logo as-is */
 }
 
 .footer-dark a,
