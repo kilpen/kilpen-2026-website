@@ -2,7 +2,7 @@
 title: Christine
 email: christine@kilpen.com
 image: "/images/avatar.png"
-description: IT Business Analyst and Partner
+description: IT Business Analyst
 group: partner
 weight: 10
 social:
@@ -18,5 +18,3 @@ social:
     icon: fa-brands fa-linkedin
     link: https://linkedin.com
 ---
-
-IT Business Analyst

@@ -1,9 +1,10 @@
 ---
-title: Elmer
-email: elmer@kilpen.com
-image: "/images/elmer.png"
-description: Technology Project Manager
-weight: 2
+title: Alan
+email: ""
+image: "/images/avatar.png"
+description: WordPress PHP Developer
+group: partner
+weight: 10
 social:
   - name: github
     icon: fa-brands fa-github
