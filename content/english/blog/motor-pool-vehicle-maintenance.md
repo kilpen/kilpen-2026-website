@@ -3,13 +3,13 @@ title: "Motor Pool Vehicle Maintenance System"
 meta_title: "Fleet Management System"
 description: "Centralized system for vehicle maintenance tracking and license renewal notifications"
 date: 2023-06-01T00:00:00Z
-image: "/images/solutions/image-placeholder.png"
+image: "/images/solutions/motor-pool-vehicle-maintenance.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["fleet-management", "google-workspace", "automation"]
 draft: false
 ---
-
+ 
 ## Business Problem
 
 The client faced constraints in a low-margin sector without budget for commercial fleet tracking software. As operations expanded, monitoring vehicle maintenance and licensing renewals became increasingly challenging. They needed:
