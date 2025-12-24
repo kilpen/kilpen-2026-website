@@ -158,19 +158,17 @@
 /* Allow Chroma's background color instead of theme's bg-light */
 .content .highlight pre,
 .prose .highlight pre {
-  @apply !bg-[#272822]; /* Monokai background color */
+  @apply !bg-[#272822] p-4 overflow-x-auto; /* Monokai background color */
 }
 
-/* Allow Chroma's syntax colors instead of forcing primary color */
+/* Reset prose styling on code blocks to allow Chroma's inline styles */
 .content .highlight code,
-.prose .highlight code {
-  @apply !text-[#f8f8f2]; /* Monokai default text color */
-}
-
-/* Ensure proper padding and overflow for code blocks */
-.content .highlight pre,
-.prose .highlight pre {
-  @apply p-4 overflow-x-auto;
+.prose .highlight code,
+.content .highlight code span,
+.prose .highlight code span {
+  color: inherit !important; /* Let inline styles control color */
+  background: transparent !important;
+  padding: 0 !important;
 }
 
 /* Style inline code (not in highlight blocks) differently */
