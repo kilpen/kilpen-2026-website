@@ -105,6 +105,13 @@ map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
 
 
+# Plausible Analytics
+# plausible module: https://github.com/divinerites/plausible-hugo
+[plausible]
+enable = true
+domain = "kilpen.com"
+selfhosted_domain = "https://plausible.kilpen.com"
+
 # Subscription
 [subscription]
 enable = false

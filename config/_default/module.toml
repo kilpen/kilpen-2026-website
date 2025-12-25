@@ -92,6 +92,9 @@ path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics"
 
+[[imports]]
+path = "github.com/divinerites/plausible-hugo"
+
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics"
 
