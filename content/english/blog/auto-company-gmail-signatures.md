@@ -1,0 +1,27 @@
+---
+title: "Automated Company-Wide Gmail Signature Blocks"
+meta_title: "Automated Gmail Signature Management for Google Workspace"
+description: "How KilPen developed an automated solution using Google Apps Script to enforce consistent email signature blocks across a company's Google Workspace domain"
+date: 2025-12-31T00:00:00Z
+image: "/images/solutions/auto-company-gmail-signatures.png"
+categories: ["Solutions"]
+author: "Chris"
+tags: ["google-apps-script", "google-workspace", "gmail", "automation"]
+draft: false
+---
+
+## Business Problem
+
+Our client valued consistency in branding within email. Concerned that employees creating their own signature blocks in email would result in branding conflicts, KilPen was consulted to develop a company-wide signature standard in Gmail.
+
+## Mission
+
+Using Gmail and Google Cloud Console, KilPen needed to develop a technical solution that would replace user signature blocks domain wide with a HTML template that pulls user details from the Google Workspace company directory.
+
+## Solution
+
+Using Google Apps Scripting and Google Cloud, a tool was developed that iterated through the Workspace domain's users and executed a Google API call, with OAuth2 authentication, to replace their signature blocks. The signature block was dynamically recreated each day based on the HTML template and the person's name, title, address, and phone number stored in the company directory.
+
+## Timeline
+
+**Completion:** Three week
