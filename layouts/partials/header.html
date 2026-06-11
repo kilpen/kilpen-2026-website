@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__logo" href="{{ "/" | relURL }}" aria-label="KilPen Tech — home">
+        <img src="{{ "images/logo.png" | relURL }}" alt="KilPen Tech logo" width="150" height="30" />
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        {{- $current := . }}
+        {{- range site.Menus.main }}
+          {{- if .HasChildren }}
+            <li class="nav__item--dropdown">
+              <button class="nav__link" aria-haspopup="true">
+                {{ .Name }}
+                <svg class="nav__caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 4l4 4 4-4" /></svg>
+              </button>
+              <ul class="nav__dropdown">
+                {{- range .Children }}
+                  <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                {{- end }}
+              </ul>
+            </li>
+          {{- else }}
+            <li>
+              <a class="nav__link{{ if $current.IsMenuCurrent "main" . }} is-active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+            </li>
+          {{- end }}
+        {{- end }}
+        {{- with site.Params.navigation_button }}
+          {{- if .enable }}
+            <li class="nav__cta"><a class="btn btn--accent" href="{{ .link | relURL }}">{{ .label }}</a></li>
+          {{- end }}
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

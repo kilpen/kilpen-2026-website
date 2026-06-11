@@ -1,13 +1,30 @@
 {{ define "main" }}
-  {{ $image := resources.Get .Params.image }}
-  <section class="section-sm about-hero" {{ with $image }}style="background-image: url('{{ .RelPermalink }}');"{{ end }}>
-    <div class="about-hero-overlay"></div>
-    <div class="container relative z-10">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-8 text-center">
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
+  {{ partial "page-header.html" . }}
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="prose">
+          {{ .Content }}
         </div>
+        <aside class="contact-aside">
+          {{- with .Params.image }}
+            <img src="{{ . | relURL }}" alt="The KilPen team" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 1.4rem;" loading="lazy" />
+          {{- end }}
+          <div class="card">
+            <div class="card__body">
+              <h3>Meet the team</h3>
+              <p>Get to know the people who make IT with Aloha happen.</p>
+              <a class="card__link" href="{{ "/authors" | relURL }}">The People <span class="arrow">&rarr;</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <h3>Start a conversation</h3>
+              <p>Tell us about your mission and your technology challenges.</p>
+              <a class="card__link" href="{{ "/contact" | relURL }}">Contact us <span class="arrow">&rarr;</span></a>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+  <section class="section">
+    <div class="container">
+      <div class="tag-list" style="margin-top: 0;">
+        {{- range .Pages.ByTitle }}
+          <a href="{{ .RelPermalink }}">{{ .Title }} ({{ len .Pages }})</a>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,17 @@
+<article class="card post-card">
+  {{- with .Params.image }}
+    <a class="card__media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" />
+    </a>
+  {{- end }}
+  <div class="card__body">
+    <div class="post-card__meta">
+      {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>{{- end }}
+      {{- range first 1 (.GetTerms "categories") }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- end }}
+    </div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="post-card__summary">{{ .Params.description | default .Summary | plainify | truncate 140 }}</p>
+  </div>
+</article>

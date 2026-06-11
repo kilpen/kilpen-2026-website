@@ -1,8 +1,13 @@
-<section>
-  <div class="container text-center">
-    <div class="page-header-charcoal rounded-2xl px-8 py-14">
-      <h1 class="text-white">{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
-      {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6 breadcrumb-light") }}
-    </div>
+<section class="page-band">
+  <div class="container">
+    <p class="page-band__crumb">
+      <a href="{{ "/" | relURL }}">Home</a>
+      <span aria-hidden="true"> / </span>
+      <span>{{ .Title }}</span>
+    </p>
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.description }}
+      <p class="page-band__desc">{{ . }}</p>
+    {{- end }}
   </div>
 </section>

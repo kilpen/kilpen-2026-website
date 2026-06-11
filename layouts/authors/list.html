@@ -1,37 +1,31 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
-
-  <section class="section pt-0">
+  {{ partial "page-header.html" . }}
+  <section class="section">
     <div class="container">
-      <div class="content mb-12">
-        <p class="mb-4">At KilPen, we believe that successful technology projects require aligning the right skillset to each unique challenge. No single team can master every technology stack, framework, or platform—and pretending otherwise does a disservice to our clients.</p>
-        <p>That's why we've built our practice around a simple principle: our Core Team brings broad technology expertise and deep project experience, while our trusted network of Partners extends our capabilities into specialized domains. This approach ensures you always get the right expertise for your specific needs, without compromise.</p>
+      {{- $core := where .Pages "Params.group" "core" }}
+      {{- $partners := where .Pages "Params.group" "partner" }}
+
+      <div class="section-head">
+        <span class="eyebrow">Core team</span>
+        <h2>The people behind KilPen</h2>
+      </div>
+      <div class="team-grid">
+        {{- range $core.ByWeight }}
+          {{ partial "person-card.html" . }}
+        {{- end }}
       </div>
 
-      <h2 class="mb-8">Core Team</h2>
-      <p class="mb-8">Our core team brings decades of combined experience across IT services, project management, and technical consulting. We handle the majority of client engagements and coordinate with partners when specialized expertise is needed.</p>
-      <div class="row mb-14">
-        {{ range where .RegularPages "Params.group" "core" }}
-          <div class="md:col-6 lg:col-4 mb-14">
-            {{ partial "components/author-card" . }}
-          </div>
-        {{ end }}
-      </div>
-
-      <h2 class="mb-8">Partners</h2>
-      <p class="mb-8">When projects require expertise outside our core competencies, we turn to our vetted network of partners. These trusted professionals share our commitment to quality and client success, allowing us to deliver specialized solutions without compromising on excellence.</p>
-      <div class="row">
-        {{ range where .RegularPages "Params.group" "partner" }}
-          <div class="md:col-6 lg:col-4 mb-14">
-            {{ partial "components/author-card" . }}
-          </div>
-        {{ end }}
-      </div>
-
-      <div class="text-center mt-8">
-        <p class="mb-4 text-lg">Interested in becoming a KilPen Tech partner?</p>
-        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
-      </div>
+      {{- if $partners }}
+        <div class="section-head" style="margin-top: 4rem;">
+          <span class="eyebrow">Partners</span>
+          <h2>Trusted collaborators</h2>
+        </div>
+        <div class="team-grid">
+          {{- range $partners.ByWeight }}
+            {{ partial "person-card.html" . }}
+          {{- end }}
+        </div>
+      {{- end }}
     </div>
   </section>
 {{ end }}

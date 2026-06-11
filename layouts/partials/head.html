@@ -1,0 +1,41 @@
+{{- $title := site.Title -}}
+{{- if not .IsHome -}}
+  {{- $title = printf "%s | KilPen Technical Services" (.Params.meta_title | default .Title) -}}
+{{- end -}}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ $title }}</title>
+
+{{- $desc := .Params.description | default site.Params.metadata.description }}
+<meta name="description" content="{{ $desc }}" />
+<meta name="author" content="{{ site.Params.metadata.author }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{- with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{- else }}
+<meta property="og:image" content="{{ "images/og-image.png" | absURL }}" />
+{{- end }}
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="shortcut icon" href="{{ "images/favicon.png" | relURL }}" type="image/png" />
+
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" />
+{{- end }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+
+{{- if site.Params.plausible.enable }}
+<link rel="preconnect" href="https://{{ site.Params.plausible.selfhosted_domain }}" />
+<script defer data-domain="{{ site.Params.plausible.domain }}" src="https://{{ site.Params.plausible.selfhosted_domain }}/js/script.js"></script>
+{{- end }}

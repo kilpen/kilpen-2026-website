@@ -1,0 +1,2 @@
+{{- $style := .Get "style" | default "solid" -}}
+<a class="btn {{ if eq $style "outline" }}btn--outline{{ else }}btn--primary{{ end }}" href="{{ .Get "link" | relURL }}" {{ with .Get "rel" }}rel="{{ . }}"{{ end }}>{{ .Get "label" }} <span class="arrow">&rarr;</span></a>
