@@ -1,53 +1,39 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
-
-  <section class="section-sm">
+  {{ partial "page-header.html" . }}
+  <section class="section">
     <div class="container">
-      <div class="row">
-        <div class="md:col-10 lg:col-6 mx-auto">
-          <form action="{{ site.Params.contact_form_action }}" method="POST">
-            <div class="mb-6">
-              <label for="name" class="form-label">
-                Name <span class="text-red-500">*</span>
-              </label>
-              <input
-                id="name"
-                name="name"
-                class="form-input"
-                placeholder="Your name"
-                type="text"
-                required />
+      <div class="contact-grid">
+        <form class="form-card" action="{{ site.Params.contact_form_action }}" method="POST">
+          <label class="form-label" for="name">Name <span class="req">*</span></label>
+          <input class="form-input" id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label class="form-label" for="email">Email <span class="req">*</span></label>
+          <input class="form-input" id="email" name="email" type="email" placeholder="your.email@example.com" required />
+
+          <label class="form-label" for="message">Message <span class="req">*</span></label>
+          <textarea class="form-input" id="message" name="message" rows="7" placeholder="How can we help you?" required></textarea>
+
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAAdIQa_aNTq9GHKE" style="margin-bottom: 1.3rem;"></div>
+
+          <button class="btn btn--primary" type="submit">Send message <span class="arrow">&rarr;</span></button>
+        </form>
+
+        <aside class="contact-aside">
+          <div class="card">
+            <div class="card__body">
+              <h3>Prefer to talk it through?</h3>
+              <p>Book a time that works for you — no obligation, just a conversation about your technology needs.</p>
+              <a class="card__link" href="{{ "/booking" | relURL }}">Book an appointment <span class="arrow">&rarr;</span></a>
             </div>
-            <div class="mb-6">
-              <label for="email" class="form-label">
-                Email <span class="text-red-500">*</span>
-              </label>
-              <input
-                id="email"
-                name="email"
-                class="form-input"
-                placeholder="your.email@example.com"
-                type="email"
-                required />
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <h3>Confidentiality first</h3>
+              <p>Sensitive matter? Every inquiry is handled with discretion from the very first message.</p>
+              <a class="card__link" href="{{ "/bespoke-services" | relURL }}">About bespoke services <span class="arrow">&rarr;</span></a>
             </div>
-            <div class="mb-6">
-              <label for="message" class="form-label">
-                Message <span class="text-red-500">*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-input"
-                placeholder="How can we help you?"
-                rows="8"
-                required></textarea>
-            </div>
-            <div class="mb-6">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAAdIQa_aNTq9GHKE"></div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>

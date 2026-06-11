@@ -1,0 +1,6 @@
+{{- $type := .Get 0 | default "note" -}}
+{{- $icons := dict "note" "&#128221;" "info" "&#8505;&#65039;" "tip" "&#128161;" "warning" "&#9888;&#65039;" -}}
+<div class="notice notice--{{ $type }}">
+  <span class="notice__icon" aria-hidden="true">{{ index $icons $type | default "&#128221;" | safeHTML }}</span>
+  <div>{{ .Inner | markdownify }}</div>
+</div>

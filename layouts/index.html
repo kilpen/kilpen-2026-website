@@ -1,184 +1,109 @@
 {{ define "main" }}
-  <!-- Banner -->
-  {{ with .Params.banner }}
-    {{ $image := resources.Get .image }}
-    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0">
-        <div
-          class="w-full h-full bg-cover bg-center bg-fixed"
-          style="background-image: url('{{ $image.RelPermalink }}');">
-        </div>
-        <!-- Overlay for text readability -->
-        <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div>
-      </div>
-      <!-- Content -->
-      <div class="container relative z-10">
-        <div class="row justify-center">
-          <div class="lg:col-8 md:col-10 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1 text-white">
-              {{ .title | markdownify }}
-            </h1>
-            <p class="mb-8 text-lg text-gray-200">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </section>
-  {{ end }}
-  <!-- /Banner -->
-
-  <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section class="section-sm border-t border-border dark:border-darkmode-border {{ if (modBool $i 2) }}bg-light dark:bg-darkmode-body{{ else }}bg-body dark:bg-darkmode-body{{ end }}">
+  {{- with .Params.banner }}
+    <section class="hero">
       <div class="container">
-        <div class="row items-center justify-between">
-          <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+        <div class="hero__inner">
+          <div>
+            <span class="eyebrow">Hawaii-based · Serving worldwide</span>
+            <h1>{{ .title | markdownify }}</h1>
+            <p>{{ .content | markdownify }}</p>
+            <div class="hero__actions">
+              <a class="btn btn--accent" href="{{ "/booking" | relURL }}">Book a consultation <span class="arrow">&rarr;</span></a>
+              <a class="btn btn--ghost" href="#services">Explore our services</a>
+            </div>
           </div>
-          <div
-            class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
-              {{ .title | markdownify }}
-            </h2>
-            <p class="mb-8 text-lg">
-              {{ .content | markdownify }}
-            </p>
-            <ul>
-              {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
-                  {{ . | markdownify }}
-                </li>
-              {{ end }}
-            </ul>
-            {{ with .button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
-          </div>
+          {{- with .image }}
+            <div class="hero__media">
+              <img src="{{ . | relURL }}" alt="The KilPen team at work" width="640" height="640" fetchpriority="high" />
+            </div>
+          {{- end }}
+        </div>
+      </div>
+      <div class="trust">
+        <div class="container trust__inner">
+          <span class="trust__item">Veteran-founded</span>
+          <span class="trust__item">Family-owned since 2016</span>
+          <span class="trust__item">Nonprofit &amp; mission-driven focus</span>
+          <span class="trust__item">Confidentiality first</span>
         </div>
       </div>
     </section>
-  {{ end }}
-  <!-- /Features -->
+  {{- end }}
 
-  <!-- Call to Action -->
-  {{ with site.GetPage "sections/call-to-action" }}
-    {{ if .Params.enable }}
-      <section class="section bg-dark dark:bg-darkmode-dark">
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">What we do</span>
+        <h2>Technology services built around your mission</h2>
+        <p class="lead">Enterprise-quality solutions at nonprofit-friendly terms — tailored to your needs, timeline, and budget.</p>
+      </div>
+      <div class="cards">
+        {{- range .Params.features }}
+          <article class="card">
+            {{- with .image }}
+              <div class="card__media"><img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" /></div>
+            {{- end }}
+            <div class="card__body">
+              <h3>{{ .title }}</h3>
+              <p class="card__tagline">{{ .content | markdownify }}</p>
+              <ul class="checklist">
+                {{- range .bulletpoints }}
+                  <li>{{ . | markdownify }}</li>
+                {{- end }}
+              </ul>
+              {{- if .button.enable }}
+                <a class="card__link" href="{{ .button.link | relURL }}">{{ .button.label }} <span class="arrow">&rarr;</span></a>
+              {{- end }}
+            </div>
+          </article>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+  {{- with site.GetPage "sections/testimonial" }}
+    {{- if .Params.enable }}
+      <section class="section section--alt">
         <div class="container">
-          <div class="row items-center justify-between">
-            <div class="md:col-5 mb-6 md:mb-0">
-              {{ partial "image" (dict "Src" .Params.image "Alt" "call to action" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
-            </div>
-            <div class="md:col-6">
-              <h2 class="mb-4 text-white">
-                {{ .Params.title | markdownify }}
-              </h2>
-              <p class="mb-8 text-lg text-gray-300">
-                {{ .Params.description | markdownify }}
-              </p>
-              {{ with .Params.button }}
-                {{ if .enable }}
-                  <a class="btn btn-primary" href="{{ .link | absURL }}">
-                    {{ .label }}
-                    <i class="fa fa-arrow-right pl-2"></i>
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
+          <div class="section-head section-head--center">
+            <span class="eyebrow">Client voices</span>
+            <h2>{{ .Params.title }}</h2>
+            <p class="lead">{{ .Params.description | markdownify }}</p>
           </div>
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
-  <!-- /Call to Action -->
-
-  <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
-    {{ if .Params.enable }}
-      <section class="section bg-primary/5 dark:bg-darkmode-primary/10 border-t border-border dark:border-darkmode-border">
-        <div class="container">
-          <div class="row">
-            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-              <h2 class="mb-4">
-                {{ .Title | markdownify }}
-              </h2>
-              <p>
-                {{ .Params.description | markdownify }}
-              </p>
-            </div>
-            <div class="col-12">
-              <div class="swiper testimonial-slider">
-                <div class="swiper-wrapper">
-                  {{ range .Params.testimonials }}
-                    <div class="swiper-slide">
-                      <div
-                        class="bg-white dark:bg-darkmode-light rounded-lg px-7 py-10 shadow-sm">
-                        <div class="text-primary dark:text-darkmode-primary">
-                          <svg
-                            width="33"
-                            height="20"
-                            viewBox="0 0 33 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z"
-                              fill="currentColor" />
-                          </svg>
-                        </div>
-                        <blockquote class="mt-8">
-                          {{ .content | markdownify }}
-                        </blockquote>
-                        <div class="mt-11 flex items-center">
-                          <div class="text-text-dark dark:text-white">
-                            {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
-                          </div>
-                          <div class="ml-4">
-                            <h3 class="h5 font-primary font-semibold">
-                              {{ .name }}
-                            </h3>
-                            <p class="text-text-dark dark:text-white">
-                              {{ .designation | markdownify }}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  {{ end }}
+          <div class="quotes">
+            {{- range .Params.testimonials }}
+              <article class="quote">
+                <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+                <blockquote>{{ .content | markdownify }}</blockquote>
+                <div class="quote__who">
+                  <strong>{{ .name }}</strong>
+                  <span>{{ .designation }}</span>
                 </div>
-                <div
-                  class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
-              </div>
+              </article>
+            {{- end }}
+          </div>
+        </div>
+      </section>
+    {{- end }}
+  {{- end }}
+
+  {{- with site.GetPage "sections/call-to-action" }}
+    {{- if .Params.enable }}
+      <section class="section">
+        <div class="container">
+          <div class="cta">
+            <div>
+              <h2>{{ .Params.title }}</h2>
+              <p>{{ .Params.description | markdownify }}</p>
+            </div>
+            <div class="cta__actions">
+              {{- if .Params.button.enable }}
+                <a class="btn btn--accent" href="{{ .Params.button.link | relURL }}">{{ .Params.button.label }} <span class="arrow">&rarr;</span></a>
+              {{- end }}
             </div>
           </div>
         </div>
       </section>
-    {{ end }}
-  {{ end }}
-  <!-- /Testimonials -->
+    {{- end }}
+  {{- end }}
 {{ end }}

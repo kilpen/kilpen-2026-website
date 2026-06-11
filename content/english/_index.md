@@ -23,7 +23,7 @@ features:
     button:
       enable: true
       label: "Learn more"
-      link: "/it-services"
+      link: "/it-ops"
 
   - title: "Technology Consulting"
     image: "/images/consult-3.webp"

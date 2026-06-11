@@ -1,0 +1,16 @@
+<article class="person">
+  {{- with .Params.image }}
+    <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}" loading="lazy" width="110" height="110" />
+  {{- end }}
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ .Params.description }}</p>
+  {{- with .Params.social }}
+    <div class="person__social">
+      {{- range . }}
+        <a href="{{ .link }}" target="_blank" rel="noopener nofollow" aria-label="{{ .name }}">
+          {{ partial "social-icon.html" .name }}
+        </a>
+      {{- end }}
+    </div>
+  {{- end }}
+</article>

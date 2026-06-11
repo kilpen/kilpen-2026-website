@@ -1,0 +1,6 @@
+{{- $dir := .Get "dir" -}}
+<div class="gallery-grid">
+  {{- range resources.Match (printf "%s/*" (strings.TrimSuffix "/" $dir)) }}
+    <img src="{{ .RelPermalink }}" alt="Gallery image" loading="lazy" />
+  {{- end }}
+</div>

@@ -1,0 +1,10 @@
+<div class="video-embed">
+  <video
+    {{ if ne (.Get "controls") "false" }}controls{{ end }}
+    {{ if eq (.Get "autoplay") "true" }}autoplay{{ end }}
+    {{ if eq (.Get "loop") "true" }}loop{{ end }}
+    {{ if eq (.Get "muted") "true" }}muted{{ end }}>
+    <source src="{{ .Get "src" }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>

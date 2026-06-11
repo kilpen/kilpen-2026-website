@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <img src="{{ "images/logo-darkmode.png" | relURL }}" alt="KilPen Tech logo" width="150" height="30" />
+        <p>Hawaii-based, veteran-founded IT services and consulting for nonprofits and mission-driven organizations. Serving with aloha since 2016.</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Explore</h2>
+        <ul class="footer__links">
+          <li><a href="{{ "/it-ops" | relURL }}">IT Operations</a></li>
+          <li><a href="{{ "/technology-consulting" | relURL }}">Technology Consulting</a></li>
+          <li><a href="{{ "/bespoke-services" | relURL }}">Bespoke Services</a></li>
+          <li><a href="{{ "/about" | relURL }}">About</a></li>
+          <li><a href="{{ "/blog" | relURL }}">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Connect</h2>
+        <ul class="footer__links">
+          <li><a href="{{ "/contact" | relURL }}">Contact us</a></li>
+          <li><a href="{{ "/booking" | relURL }}">Book an appointment</a></li>
+          {{- range site.Menus.footer }}
+            <li><a href="{{ .URL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+        <div class="footer__social" style="margin-top: 1.2rem;">
+          {{- range site.Data.social.main }}
+            <a href="{{ .link }}" target="_blank" rel="noopener nofollow" aria-label="{{ .name }}">
+              {{ partial "social-icon.html" .name }}
+            </a>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© {{ now.Year }} KilPen Technical Services</span>
+      <span>Information Technology with Aloha</span>
+    </div>
+  </div>
+</footer>

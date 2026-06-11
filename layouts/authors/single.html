@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+  <section class="section">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: flex-start;">
+        {{- with .Params.image }}
+          <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}" width="160" height="160" style="border-radius: 50%; border: 4px solid var(--red-100); object-fit: cover;" />
+        {{- end }}
+        <div class="prose" style="flex: 1; min-width: 260px;">
+          {{- with .Params.description }}<p class="lead">{{ . }}</p>{{- end }}
+          {{ .Content }}
+          {{- with .Params.social }}
+            <div class="person__social" style="justify-content: flex-start;">
+              {{- range . }}
+                <a href="{{ .link }}" target="_blank" rel="noopener nofollow" aria-label="{{ .name }}">
+                  {{ partial "social-icon.html" .name }}
+                </a>
+              {{- end }}
+            </div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
