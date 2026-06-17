@@ -48,9 +48,14 @@ url = "/blog"
 weight = 5
 
 [[main]]
+name = "Security Guides"
+url = "/client-security-guides"
+weight = 6
+
+[[main]]
 name = "Contact"
 url = "/contact"
-weight = 6
+weight = 7
 
 # footer menu
 [[footer]]
