@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <section class="page-band">
+    <div class="container">
+      <p class="page-band__crumb">
+        <a href="{{ "/" | relURL }}">Home</a>
+        <span aria-hidden="true"> / </span>
+        <a href="{{ "/client-security-guides" | relURL }}">Security Guides</a>
+      </p>
+      <h1>{{ .Title }}</h1>
+      <div class="article-meta">
+        {{- with .Params.author }}<span>By {{ . }}</span>{{- end }}
+        {{- with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>{{- end }}
+        <span>{{ .ReadingTime }} min read</span>
+        {{- range (.GetTerms "categories") }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 2.5rem;">
+    <div class="container">
+      {{- with .Params.image }}
+        <div class="article-hero" style="margin: 0 auto 2.5rem;">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" />
+        </div>
+      {{- end }}
+      <div class="prose" style="margin-inline: auto;">
+        {{ .Content }}
+        {{- with (.GetTerms "tags") }}
+          <div class="tag-list">
+            {{- range . }}
+              <a href="{{ .RelPermalink }}">#{{ .Title }}</a>
+            {{- end }}
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

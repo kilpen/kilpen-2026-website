@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+  <section class="section">
+    <div class="container">
+      <div class="post-grid">
+        {{- range .Paginator.Pages }}
+          {{ partial "post-card.html" . }}
+        {{- end }}
+      </div>
+      {{ partial "pagination.html" . }}
+    </div>
+  </section>
+{{ end }}
