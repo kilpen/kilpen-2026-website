@@ -45,6 +45,8 @@ You can't manage risk from vendors you've forgotten you have. The goal is one si
 
 > **You will be surprised by your own list.** Most small organizations discover free tools holding real data, accounts tied to a former employee's personal email, and "temporary" integrations nobody turned off. Finding these is half the value of the exercise.
 
+> **A spreadsheet is enough to start — but it can grow up.** A vendor list is really the beginning of a broader inventory of *everything your IT depends on*. KilPen uses a software tool called **iTop** to build a **Configuration Management Database (CMDB)** as part of formal **IT Service Management (ITSM)** — a central, living record of your vendors, systems, and how they connect, rather than a spreadsheet that drifts out of date. Inquire with your service provider whether this option is right for you.
+
 ---
 
 ## 2. Sort Vendors Into Two Buckets — Not Five Tiers
