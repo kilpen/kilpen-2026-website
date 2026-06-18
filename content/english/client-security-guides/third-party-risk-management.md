@@ -133,6 +133,8 @@ These are the controls every crown-jewel vendor should meet. Use this as your in
 - **A named security/privacy contact** you can actually reach
 - **No unnecessary data collection** — they take only what the service needs
 
+> **Send these expectations to your vendors directly.** Our companion [Vendor Security Requirements](../vendor-security-requirements/) document states this baseline in a form you can fill in and send to a vendor as-is.
+
 ---
 
 ## 6. Contracts: *Select* the Big Ones, *Negotiate* the Small Ones
