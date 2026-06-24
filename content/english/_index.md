@@ -3,7 +3,7 @@
 banner:
   title: "Information Technology with Aloha "
   content: "Proudly serving Hawaii vibes to global companies and nonprofits."
-  image: "/images/hard-at-work.png"
+  image: "/images/hero-aloha-team.webp"
   button:
     enable: false
     label: "Get Started For Free"
