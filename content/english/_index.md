@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Information Technology with Aloha "
-  content: "Proudly serving Hawaii vibes to global companies and nonprofits."
+  title: "Information Technology with Aloha"
+  content: "Proudly bringing Hawaii vibes to global companies and nonprofits."
   image: "/images/hero-aloha-team.webp"
   button:
     enable: false
@@ -22,7 +22,7 @@ features:
       - "Secure, scalable solutions tailored to your organization"  
     button:
       enable: true
-      label: "Learn more"
+      label: "Learn More"
       link: "/it-ops"
 
   - title: "Technology Consulting"
@@ -36,7 +36,7 @@ features:
       - "Fractional CIO and executive-level advising available"
     button:
       enable: true
-      label: "Learn more"
+      label: "Learn More"
       link: "/technology-consulting"
 
   - title: "Bespoke Services"
