@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "IT Services"
-    image: "/images/managed-it-1.webp"
+    image: "/images/card-it-ops.webp"
     content: "Where technical expertise meets dependable service."
     bulletpoints:
       - "Proactive monitoring and support for your IT systems and users" 
@@ -26,7 +26,7 @@ features:
       link: "/it-ops"
 
   - title: "Technology Consulting"
-    image: "/images/consult-3.webp"
+    image: "/images/card-consulting.webp"
     content: "Trusted IT consulting backed by experience, driven by results."
     bulletpoints:
       - "Strategic guidance for major tech decisions and growth planning" 
@@ -40,7 +40,7 @@ features:
       link: "/technology-consulting"
 
   - title: "Bespoke Services"
-    image: "/images/bespoke-1.webp"
+    image: "/images/card-bespoke.webp"
     content: "Protecting what matters — your data, your reputation, your business."
     bulletpoints:
     - "Custom solutions for projects that don’t fit standard IT categories"
