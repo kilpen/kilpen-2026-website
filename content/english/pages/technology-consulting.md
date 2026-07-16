@@ -50,20 +50,15 @@ This service is ideal for nonprofits and growing organizations that need senior 
 
 ## Why Organizations Choose KilPen
 
-1. Objectivity
-We're not selling you software or pushing vendor partnerships. Our only agenda is what's right for your organization.
+1. **Objectivity** — We're not selling you software or pushing vendor partnerships. Our only agenda is what's right for your organization.
 
-2. Confidentiality
-Sensitive topics—staffing concerns, budget realities, security incidents—stay strictly confidential.
+2. **Confidentiality** — Sensitive topics—staffing concerns, budget realities, security incidents—stay strictly confidential.
 
-3. Mission Alignment
-We understand nonprofits and social enterprises. Recommendations consider your mission impact, not just technical specs.
+3. **Mission Alignment** — We understand nonprofits and social enterprises, so our recommendations consider your mission impact, not just technical specs.
 
-4. Practical Guidance
-No jargon-heavy reports that gather dust. We deliver clear, actionable recommendations you can actually implement.
+4. **Practical Guidance** — No jargon-heavy reports that gather dust. We deliver clear, actionable recommendations you can actually implement.
 
-5. Long-Term Partnership
-We build relationships, not transactions. Many clients return to us as trusted advisors year after year.
+5. **Long-Term Partnership** — We build relationships, not transactions. Many clients return to us as trusted advisors year after year.
 
 ## How We Work Together
 
