@@ -5,7 +5,7 @@ description: "Set up a virtual Ubuntu Desktop environment on Google Cloud Platfo
 date: 2025-03-27T00:00:00Z
 image: "/images/solutions/running-ubuntu-desktop-gcp.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["gcp", "ubuntu", "cloud", "remote-desktop"]
 draft: false
 ---

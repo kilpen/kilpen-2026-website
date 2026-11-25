@@ -5,7 +5,7 @@ description: "Comprehensive project and vendor management system using Google Wo
 date: 2023-06-01T00:00:00Z
 image: "/images/solutions/project-vendor-management-tracking.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["project-management", "vendor-management", "google-workspace"]
 draft: false
 ---

@@ -5,7 +5,7 @@ description: "Automated solution for batch image format conversion using Google 
 date: 2023-06-01T00:00:00Z
 image: "/images/solutions/image-conversion-api.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["automation", "api", "google-workspace"]
 draft: false
 ---

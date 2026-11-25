@@ -4,7 +4,7 @@ meta_title: "iPhone & iPad Security Best Practices | KilPen Client Security Guid
 description: "A complete guide to securing an iPhone or iPad without MDM — covering passcodes, Stolen Device Protection, Advanced Data Protection, privacy, and Lockdown Mode."
 date: 2026-06-16T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["ios", "iphone", "ipad", "security", "privacy", "stolen-device-protection"]
 draft: false
 ---

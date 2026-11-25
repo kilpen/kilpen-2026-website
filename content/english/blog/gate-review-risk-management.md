@@ -5,7 +5,7 @@ description: "Quality check process and supporting tool for early development cy
 date: 2023-06-01T00:00:00Z
 image: "/images/solutions/gate-review-risk-management.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["risk-management", "google-workspace", "process-automation"]
 draft: false
 ---

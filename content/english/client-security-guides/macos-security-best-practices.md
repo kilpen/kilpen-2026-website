@@ -4,7 +4,7 @@ meta_title: "macOS Security Best Practices | KilPen Client Security Guides"
 description: "A complete guide to securing macOS Tahoe 26 and Sequoia 15 without MDM or management agents — 22 settings covering FileVault, Firewall, Gatekeeper, privacy, and more."
 date: 2026-06-16T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["macos", "security", "filevault", "privacy", "endpoint-security"]
 draft: false
 ---

@@ -4,7 +4,7 @@ meta_title: "Android Phone & Tablet Security Best Practices | KilPen Client Secu
 description: "A complete guide to securing an Android phone without MDM — covering updates, screen lock, theft protection, Find My Device, privacy, Play Protect, and more."
 date: 2026-06-16T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["android", "security", "privacy", "theft-protection", "google", "samsung"]
 draft: false
 ---

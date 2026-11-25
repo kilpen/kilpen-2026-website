@@ -5,7 +5,7 @@ description: "Dynamically identify and extract key data elements across 150+ Goo
 date: 2023-06-01T00:00:00Z
 image: "/images/solutions/google-sheets-data-aggregation.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["google-sheets", "automation", "data-aggregation"]
 draft: false
 ---

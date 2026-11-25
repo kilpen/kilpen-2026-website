@@ -5,7 +5,7 @@ description: "Relocate a Peertube video hosting platform to Linode while impleme
 date: 2023-07-25T00:00:00Z
 image: "/images/solutions/migrate-peertube-to-linode.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["peertube", "docker", "linode", "migration", "object-storage"]
 draft: false
 ---

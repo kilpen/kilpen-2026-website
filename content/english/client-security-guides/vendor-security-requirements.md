@@ -4,7 +4,7 @@ meta_title: "Vendor Security Requirements Template | KilPen Client Security Guid
 description: "A ready-to-send document that states the minimum security expectations your organization asks of vendors who handle your data — the vendor-facing companion to our Third-Party & Vendor Risk Management guide."
 date: 2026-06-18T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["third-party-risk", "vendor-risk", "tprm", "vendor-requirements", "security", "template"]
 draft: false
 ---

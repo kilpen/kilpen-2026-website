@@ -5,7 +5,7 @@ description: "Automatically send email notifications when someone submits a Goog
 date: 2023-07-25T00:00:00Z
 image: "/images/solutions/google-form-response-emailer.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["google-apps-script", "automation", "google-forms"]
 draft: false
 ---
