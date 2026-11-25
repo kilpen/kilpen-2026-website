@@ -1,0 +1,1 @@
+Self-test of the KilPen Publisher GitHub App. Close this PR without merging.
