@@ -5,7 +5,7 @@ description: "A comprehensive guide for extending iTop's CMDB by adding custom f
 date: 2025-08-03T00:00:00Z
 image: "/images/solutions/customizing-itop.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["itop", "cmdb", "customization"]
 draft: false
 ---

@@ -5,7 +5,7 @@ description: "How KilPen developed an automated solution using Google Apps Scrip
 date: 2025-12-31T00:00:00Z
 image: "/images/solutions/auto-company-gmail-signatures.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["google-apps-script", "google-workspace", "gmail", "automation"]
 draft: false
 ---

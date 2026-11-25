@@ -5,7 +5,7 @@ description: "Guide for migrating a production Mastodon instance from Masto.host
 date: 2024-01-11T00:00:00Z
 image: "/images/solutions/migrate-mastodon-to-linode.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["mastodon", "linode", "migration", "self-hosting"]
 draft: false
 ---

@@ -5,7 +5,7 @@ description: "Centralizing PGP key management within an organization using Debia
 date: 2023-08-25T00:00:00Z
 image: "/images/solutions/automating-pgp-key-management.png"
 categories: ["How To"]
-author: "Chris"
+author: "Christopher"
 tags: ["security", "pgp", "gpg", "1password", "automation"]
 draft: false
 ---

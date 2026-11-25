@@ -4,7 +4,7 @@ meta_title: "Linux Security Best Practices for Ubuntu & Debian | KilPen Client S
 description: "A complete guide to securing an Ubuntu or Debian desktop without management agents — covering updates, LUKS encryption, UFW, AppArmor, privacy, and supply-chain safety."
 date: 2026-06-16T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["linux", "ubuntu", "debian", "security", "luks", "ufw", "apparmor"]
 draft: false
 ---

@@ -4,7 +4,7 @@ meta_title: "Windows Security Best Practices | KilPen Client Security Guides"
 description: "A complete guide to securing Windows 11 without domain join or management agents — covering BitLocker, Defender, firewall, privacy, Recall, and more."
 date: 2026-06-16T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["windows", "windows-11", "security", "bitlocker", "defender", "privacy"]
 draft: false
 ---

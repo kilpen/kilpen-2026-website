@@ -4,7 +4,7 @@ meta_title: "Removing Business Data From a Personal Computer When Leaving | KilP
 description: "A topic-level guide for departing employees, contractors, and vendors on where business data hides on a personal computer and how to clean it up — downloads, browser profiles, caches, synced files, saved credentials, and app data."
 date: 2026-06-18T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["offboarding", "data-removal", "privacy", "contractor", "vendor", "security", "personal-device"]
 draft: false
 ---

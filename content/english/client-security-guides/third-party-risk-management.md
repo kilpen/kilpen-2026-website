@@ -4,7 +4,7 @@ meta_title: "Vendor Risk Management for Small Organizations & Nonprofits | KilPe
 description: "A practical, low-budget guide to managing third-party and vendor risk — how to inventory vendors, assess the ones that matter, set minimum security expectations, and lock down the account access that causes most real breaches."
 date: 2026-06-18T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["third-party-risk", "vendor-risk", "tprm", "nonprofit", "saas", "supply-chain", "security"]
 draft: false
 ---

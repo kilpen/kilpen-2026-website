@@ -4,7 +4,7 @@ meta_title: "Removing Business Data From a Personal iPhone or Android When Leavi
 description: "A topic-level guide for departing employees, contractors, and vendors on where business data hides on a personal iPhone or Android phone — work accounts, MDM profiles, work apps, cached files, saved logins, Wi-Fi/VPN profiles, and backups — and how to clean it up."
 date: 2026-07-30T00:00:00Z
 categories: ["Security Guides"]
-author: "Chris"
+author: "Christopher"
 tags: ["offboarding", "data-removal", "privacy", "contractor", "vendor", "security", "personal-device", "mobile", "ios", "android"]
 draft: false
 ---

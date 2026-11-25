@@ -5,7 +5,7 @@ description: "Centralized system for vehicle maintenance tracking and license re
 date: 2023-06-01T00:00:00Z
 image: "/images/solutions/motor-pool-vehicle-maintenance.png"
 categories: ["Solutions"]
-author: "Chris"
+author: "Christopher"
 tags: ["fleet-management", "google-workspace", "automation"]
 draft: false
 ---
